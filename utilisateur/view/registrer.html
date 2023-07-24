@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html >
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registrer</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/font-awesome.min.css">
+    <link rel="stylesheet" href="../bootstrap/themify-icons.css">
+    <link rel="stylesheet" href="../bootstrap/flag-icon.min.css">
+    <link rel="stylesheet" href="../bootstrap/cs-skin-elastic.css">
+    <link rel="stylesheet" href="../bootstrap/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+    <style>
+            body{
+                background-color: white;
+            }
+            
+            h2{
+                color:whitesmoke;
+            }
+            button{
+                width: 260px;
+            }
+            hr{
+                color:black;
+            }
+        
+            .c{
+                color:black;
+            }
+        
+            div{
+                background-color: white;
+            }
+    
+    
+    </style>
+
+
+</head>
+
+<body  style="background-color: black;">
+    <br>
+    <div class="container py-3" style="width: 850px;" >
+        <div class="jumbotron text-center" style="background-color:cadetblue; height: 50px;">
+            <h2><i><b>Create account</b></i></h2>
+        </div>
+            
+            <table><tr> <td>
+            <form action="../model/inscription.php" method="POST" class="f" style="width: 550px;" >
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="c"><b>Cin</b></label>
+                            <input type="number"  name="cin" class="form-control" placeholder="" >
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="c" ><b>Username</b></label>
+                            <input type="text"  name="username" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="c"><b>Nom</b></label>
+                            <input type="text"  name="nom" class="form-control"  placeholder="">
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <Password class="c" ><b>Password</b></label>
+                            <input type="password"  name="pwd1" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="c"><b>Prenom</b></label>
+                            <input type="text"  class="form-control" name="prenom" placeholder="">
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="c"><b>Confirmer Password</b></label>
+                            <input type="password" name="pwd2" class="form-control" placeholder="">
+                        </div>
+                       
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="c" ><b>Numéro Téléphone</b></label>
+                            <input type="number"  name="Ntel" class="form-control"  placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Sign up</button>
+                        </div>
+                   
+                    <hr>
+                    <div class="a">
+                        <p><b>Already have account ?</b> <a href="../model/Authentification.php"> <font color ="red"><b>Sign in</b></font></a></p>
+                    </div>
+                    <br>
+                    </div>
+               
+            </form></td>
+        <td> <img src="../images/signup-image.jpg" style="width: 500px;height: 200px;" ></td>
+     </tr></table> 
+</body>
+
+</html>
